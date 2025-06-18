@@ -1,44 +1,48 @@
-# 💼 ProductFX
+# 🩺 PatientConsultFX
 
-Une application JavaFX simple et élégante pour gérer une liste de produits avec nom et prix. L’interface moderne permet d’ajouter dynamiquement des produits, avec validation des champs, et un affichage clair dans une `ListView`.
-
----
-
-## 🧪 Fonctionnalités
-
-- 🖥️ Interface graphique moderne avec JavaFX
-- ✅ Ajout dynamique de produits (nom + prix)
-- ⚠️ Validation des champs : empêche les champs vides et les prix invalides
-- 📋 Affichage des produits en liste
-- 💅 Design responsive et élégant avec CSS
+Application JavaFX pour la gestion des consultations des patients.  
+Projet développé dans le cadre du **Devoir 1** encadré par **Abdelmajid BOUSSELHAM**.
 
 ---
 
-## 📸 Captures d'écran
+## 🎯 Objectifs du projet
 
-### 🧩 Interface principale
-
-![UI](captures/list.jpg)
-
-### ⚠️ Validation du prix
-
-![Validation](captures/alert.jpg)
+- Gérer les informations des patients et leurs consultations.
+- Concevoir une interface graphique ergonomique avec JavaFX.
+- Appliquer l’architecture MVC (Modèle – Vue – Contrôleur).
+- Manipuler des composants JavaFX : `TextField`, `TextArea`, `ListView`, etc.
+- Utiliser Maven pour la gestion des dépendances et l'exécution du projet.
 
 ---
 
 ## 🛠️ Technologies utilisées
 
-- Java 17
-- JavaFX 17.0.6
-- Maven
-- CSS
+| Outil / Langage | Version      |
+|-----------------|--------------|
+| Java            | 17           |
+| JavaFX          | 17.0.6       |
+| Maven           | 3.x          |
+| FXML            | Oui (JavaFX UI) |
+| CSS             | Pour le style |
+| IDE             | IntelliJ / VS Code / NetBeans |
 
 ---
 
-## 🚀 Démarrage local
+## 📸 Aperçu de l'application
 
-1. **Cloner le dépôt :**
+> (Ajoute ici un screenshot si disponible)
+
+- 🧑‍⚕️ Formulaire de saisie : Nom du patient, description de la consultation
+- ➕ Bouton d'ajout avec validation des champs
+- 📋 Liste dynamique affichant les consultations enregistrées
+
+---
+
+## ⚙️ Lancer l'application localement
+
+1. Cloner ce dépôt :
 
 ```bash
-git clone https://github.com/LAMBARAA-Abdellah/ProductFX.git
-cd ProductFX
+git clone https://github.com/LAMBARAA-Abdellah/PatientConsultFX.git
+cd PatientConsultFX
+

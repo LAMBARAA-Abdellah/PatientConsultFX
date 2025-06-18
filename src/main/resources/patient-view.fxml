@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.patientapp.PatientController"
+            stylesheets="@style.css">
+
+    <!-- Haut : Titre de l'application -->
+    <top>
+        <Label text="🩺 Gestion des Consultations des Patients"
+               styleClass="title"
+               BorderPane.alignment="CENTER"/>
+    </top>
+
+    <!-- Centre : Formulaire -->
+    <center>
+        <VBox spacing="15" alignment="CENTER">
+            <padding>
+                <Insets top="20" right="20" bottom="20" left="20"/>
+            </padding>
+
+            <HBox spacing="10" alignment="CENTER">
+                <Label text="Nom du patient:"/>
+                <TextField fx:id="nomField" promptText="Nom" prefWidth="200"/>
+            </HBox>
+
+            <HBox spacing="10" alignment="CENTER">
+                <Label text="Consultation:"/>
+                <TextArea fx:id="consultationField" promptText="Symptômes ou description"
+                          prefWidth="300" prefHeight="100" wrapText="true"/>
+            </HBox>
+
+            <Button text="Ajouter le Patient"
+                    onAction="#handleAddPatient"
+                    styleClass="add-button"/>
+        </VBox>
+    </center>
+
+    <!-- Bas : Liste des patients -->
+    <bottom>
+        <VBox spacing="10">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+            <Label text="📋 Liste des consultations enregistrées :"
+                   styleClass="section-title"/>
+            <ListView fx:id="patientListView" prefHeight="200"/>
+        </VBox>
+    </bottom>
+
+</BorderPane>
