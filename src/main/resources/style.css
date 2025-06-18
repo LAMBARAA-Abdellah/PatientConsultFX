@@ -1,24 +1,63 @@
 .title {
-    -fx-font-size: 22px;
-    -fx-text-fill: #2c3e50;
+    -fx-font-size: 24px;
     -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
     -fx-padding: 15;
 }
 
-.section-title {
-    -fx-font-size: 16px;
-    -fx-text-fill: #34495e;
-    -fx-font-weight: bold;
+.search-field {
+    -fx-font-size: 13px;
+    -fx-pref-width: 400px;
+    -fx-padding: 8;
 }
 
 .add-button {
     -fx-background-color: #27ae60;
     -fx-text-fill: white;
-    -fx-font-size: 14px;
-    -fx-padding: 8 16;
-    -fx-background-radius: 6px;
+    -fx-padding: 6 14;
+    -fx-font-size: 13px;
+    -fx-background-radius: 5;
 }
 
 .add-button:hover {
     -fx-background-color: #2ecc71;
+}
+
+.edit-button {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-padding: 4 10;
+    -fx-background-radius: 5;
+}
+
+.edit-button:hover {
+    -fx-background-color: #2980b9;
+}
+
+.delete-button {
+    -fx-background-color: #e74c3c;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-padding: 4 10;
+    -fx-background-radius: 5;
+}
+
+.delete-button:hover {
+    -fx-background-color: #c0392b;
+}
+
+.alert-label {
+    -fx-font-size: 13px;
+    -fx-padding: 8;
+    -fx-background-radius: 6;
+    -fx-text-fill: white;
+}
+
+.alert-success {
+    -fx-background-color: #2ecc71;
+}
+
+.alert-danger {
+    -fx-background-color: #e74c3c;
 }

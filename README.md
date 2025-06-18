@@ -7,10 +7,10 @@ Projet développé dans le cadre du **Devoir 1** encadré par **Abdelmajid BOUSS
 
 ## 🎯 Objectifs du projet
 
-- Gérer les informations des patients et leurs consultations.
+- Gérer les informations des patients (nom, CIN, consultation, prix).
 - Concevoir une interface graphique ergonomique avec JavaFX.
 - Appliquer l’architecture MVC (Modèle – Vue – Contrôleur).
-- Manipuler des composants JavaFX : `TextField`, `TextArea`, `ListView`, etc.
+- Manipuler des composants JavaFX : `TextField`, `TableView`, `Button`, etc.
 - Utiliser Maven pour la gestion des dépendances et l'exécution du projet.
 
 ---
@@ -23,18 +23,44 @@ Projet développé dans le cadre du **Devoir 1** encadré par **Abdelmajid BOUSS
 | JavaFX          | 17.0.6       |
 | Maven           | 3.x          |
 | FXML            | Oui (JavaFX UI) |
-| CSS             | Pour le style |
+| CSS             | Personnalisé |
 | IDE             | IntelliJ / VS Code / NetBeans |
 
 ---
 
 ## 📸 Aperçu de l'application
 
-> (Ajoute ici un screenshot si disponible)
+### ➕ Ajouter un patient
+![Ajouter Patient](captures/addPatient.jpg)
 
-- 🧑‍⚕️ Formulaire de saisie : Nom du patient, description de la consultation
-- ➕ Bouton d'ajout avec validation des champs
-- 📋 Liste dynamique affichant les consultations enregistrées
+### 🗑️ Supprimer un patient
+![Supprimer Patient](captures/delete.jpg)
+
+### 🔍 Recherche dynamique (par nom ou CIN)
+![Filtrer Patient](captures/filterPatient.jpg)
+
+### 📋 Liste affichée
+![Liste des Patients](captures/list patient.jpg)
+
+### ✏️ Modifier un patient
+![Modifier Patient](captures/modifier.jpg)
+
+### 📭 Table vide
+![Table vide](captures/interfaceVide.jpg)
+
+### ❌ Validation des champs
+![Erreur de validation](captures/validation.jpg)
+
+---
+
+## ✅ Fonctionnalités clés
+
+- Ajout, modification et suppression de patients
+- TableView responsive à 100% avec colonnes Nom, CIN, Consultation, Prix
+- Formulaire réactif avec bouton contextuel (Ajouter/Modifier)
+- Alertes stylées (succès, erreur)
+- Recherche dynamique par nom ou CIN
+- Design moderne avec CSS
 
 ---
 
@@ -45,4 +71,3 @@ Projet développé dans le cadre du **Devoir 1** encadré par **Abdelmajid BOUSS
 ```bash
 git clone https://github.com/LAMBARAA-Abdellah/PatientConsultFX.git
 cd PatientConsultFX
-
